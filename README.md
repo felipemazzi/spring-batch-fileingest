@@ -9,10 +9,14 @@ A [Spring Batch][SB] example application with the following features:
 * [External configuration in environment variables][12FCONFIG]
 * [Run the job from within a Web Container][SBWEB]
 * Launch the job asynchronously from a HttpRequest (REST endpoint)
+* Exposure of [built-in metrics][SBBMETRICS] with Spring Boot Actuator and Micrometer's 
+*SimpleMeterRegistry* (/actuator/metrics endpoint)
 
 [12FCONFIG]:https://12factor.net/config
 
 [SBWEB]:https://docs.spring.io/spring-batch/docs/current-SNAPSHOT/reference/html/job.html#runningJobsFromWebContainer
+
+[SBBMETRICS]:https://docs.spring.io/spring-batch/docs/current-SNAPSHOT/reference/html/monitoring-and-metrics.html#built-in-metrics
 
 This example is an ETL process that:
 * Read an input file with persons *name*, *phone number* and *e-mail address*
